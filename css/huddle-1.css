@@ -47,11 +47,12 @@ body{
   }
   #text button{
     width: 190px;
-    font-style:neormal;
     height: 60px;
     border-radius: 40px;
     color: var(--Violet);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border: none;
+    box-shadow: 0px 10px 20px var(--SoftMagenta);
+
 }
 footer{
   display: flex;
@@ -71,3 +72,46 @@ footer{
   color: white;
   ;
 }
+
+/* here is a responsive media query to make the design responsive */
+@media screen and (min-width: 320px) and (max-width: 470px) {
+  
+  #intro{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  body{
+    background-image: url(/resources/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+  }
+  #text{
+    width: fit-content;
+    
+  }
+  #text{
+    align-items: center;
+  }
+  #text h1{
+    text-align: center;
+    font-size: 22px;
+    font-weight:bolder;
+  }
+  .illustration-mockups{
+    width: 120%;
+    /* height: 10px; */
+  }
+  #huddle{
+    width: 65%;
+  }
+    #text p{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+  }
+
+}
+
